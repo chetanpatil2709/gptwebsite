@@ -1,0 +1,122 @@
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.gradient_text {
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header_content h1 {
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.header_content p {
+    font-size: 18px;
+    color: #00ffff8a;
+    line-height: 22px;
+}
+
+.header_content_input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.header_content_input input {
+    flex: 2 1;
+    width: 100%;
+    min-height: 45px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 6px;
+    outline: none;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header_content_input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    background: var(--button-bg);
+    border: 2px solid var(--button-bg);
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.header_image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:769px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header_content h1 {
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    .header_image {
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header_content h1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .header_content p {
+        font-size: 17px;
+    }
+
+    .header_content_input input {
+        font-size: 16px;
+    }
+
+    .header_content_input button {
+        font-size: 16px;
+    }
+}

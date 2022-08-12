@@ -1,0 +1,23 @@
+.whatgpt_feature_cotents {
+    /* padding-right: 90px; */
+    display: grid;
+}
+
+.whatgpt_feature_top_row {
+    width: 42px;
+    background: var(--gradient-text);
+    height: 3px;
+    position: absolute;
+}
+
+.whatgpt_feature_container_heading {
+    display: flex;
+    font-size: 22px;
+    color: #fff;
+    margin-right: 70px;
+    margin-top: 7px;
+}
+
+.whatgpt_feature_container_text {
+    color: var(--color-text);
+}

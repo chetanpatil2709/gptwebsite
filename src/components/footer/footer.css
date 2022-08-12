@@ -1,0 +1,129 @@
+.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-footer);
+}
+
+.footer_heading {
+    margin-top: 30px;
+}
+
+.footer_heading h1 {
+    text-align: center;
+}
+
+.footer_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_button button {
+    border: 1px solid #fff;
+    padding: 6px 17px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff;
+    margin-bottom: 90px;
+    background-color: transparent;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.footer_button button:hover {
+    text-decoration: underline;
+}
+
+.footer_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer_container a {
+    color: #fff;
+}
+
+.footer_container_logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_container_logo h1:hover {
+    cursor: pointer;
+}
+
+.footer_container_logo h1,
+.footer_container_logo p {
+    color: #fff;
+}
+
+.footer_container_links_div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 70px;
+}
+
+.footer_container_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer_container_links a {
+    cursor: pointer;
+    line-height: 30px;
+    color: #fff;
+}
+
+.footer_container_links a:hover {
+    text-decoration: underline !important;
+}
+
+.footer_container_links p {
+    cursor: text;
+    line-height: 17px;
+    color: #fff;
+    margin-top: 4px;
+}
+
+@media screen and (max-width:1000px) {
+    .footer_container {
+        flex-direction: column;
+    }
+
+    .footer_container_links_div {
+        padding-left: 0;
+    }
+
+    .footer_container_links {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:402px) {
+    .footer_container_links_div {
+        flex-direction: column !important;
+    }
+}
+
+.footer_copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.footer_copyright p {
+    margin-top: 30px;
+    color: #fff;
+}

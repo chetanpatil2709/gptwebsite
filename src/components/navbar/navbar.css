@@ -1,0 +1,130 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    padding: 10px 30px;
+}
+
+.navbar_menu {
+    display: contents;
+    /* justify-content: space-between; */
+    padding: 12px 30px;
+}
+
+.navbar_menu .logo {
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.navbar_menu .navbar_list {
+    padding: 0 10px;
+    display: flex;
+}
+
+.navbar_menu .navbar_list a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 7px 10px;
+}
+
+.navbar_sign {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar_sign .sign_in_btn {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar_sign .sign_up_btn {
+    font-size: 18px;
+    color: rgba(4, 12, 24, 1);
+    text-decoration: none;
+    background-color: orangered;
+    padding: 4px 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.navbar_sign .sign_up_btn:hover {
+    background-color: rgb(215, 63, 8);
+}
+
+.navbar_menu_container a:hover,
+.navbar_list a:hover,
+.navbar_sign .sign_in_btn:hover {
+    text-decoration: underline;
+}
+
+.hamburger_menu {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.navbar_menu_container {
+    margin-left: 10px;
+    position: relative;
+    display: none;
+}
+
+.navbar_menu_container_content {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    min-width: 210px;
+    border-radius: 10px;
+    top: 50px;
+}
+
+.navbar_menu_container_links {
+    display: grid;
+    background-color: rgba(4, 12, 24, 1);
+    text-align: end;
+    padding: 11px 14px;
+}
+
+.navbar_menu_container_links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 7px 10px;
+}
+
+.navbar_menu_container .navbar_sign {
+    display: none;
+}
+
+@media screen and (max-width:875px) {
+    .navbar_menu_container {
+        display: block;
+    }
+
+    .navbar_menu .navbar_list {
+        display: none;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .navbar_menu .navbar_sign {
+        display: none;
+    }
+
+    .navbar_menu_container .navbar_sign {
+        display: block;
+    }
+}

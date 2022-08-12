@@ -1,0 +1,76 @@
+.whatgpt_container {
+    background-color: var(--color-blog);
+    padding: 40px 50px;
+}
+
+.whatgpt_feature {
+    display: flex;
+}
+
+.whatgpt_feature_top_row {
+    width: 42px;
+    background: var(--gradient-text);
+    height: 3px;
+    position: absolute;
+}
+
+.whatgpt_feature_container_heading {
+    display: flex;
+    font-size: 22px;
+    color: #fff;
+    margin-right: 70px;
+    margin-top: 8px;
+}
+
+.whatgpt_feature_container_text {
+    color: var(--color-text);
+}
+
+.whatgpt_heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.whatgpt_heading p {
+    font-size: 22px;
+}
+
+.whatgpt_feature_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.whatgpt_feature_cotents {
+    padding-right: 90px;
+    display: grid;
+}
+
+@media screen and (max-width:426px) {
+    .whatgpt_container {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .whatgpt_feature {
+        display: grid;
+    }
+
+    .whatgpt_heading {
+        display: grid;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .whatgpt_feature_container {
+        display: grid;
+        gap: 16px;
+        justify-content: flex-start;
+    }
+
+    .whatgpt_feature_cotents {
+        padding: 0;
+    }
+}

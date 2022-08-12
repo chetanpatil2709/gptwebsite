@@ -1,0 +1,45 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-footer);
+}
+
+.article_image {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-footer);
+}
+
+.article_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.article_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.article_content p {
+    color: #ffff;
+    font-size: 12px;
+}
+
+.article_content h6 {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.article_content a {
+    cursor: pointer;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.article_content a:hover {
+    text-decoration: underline !important;
+}
